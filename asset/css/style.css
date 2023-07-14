@@ -1,0 +1,86 @@
+.container {
+    padding: 30px 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+
+}
+
+p {
+    font-size: 35px;
+}
+
+button {
+    width: 250px;
+    height: 80px;
+    background-color: blue;
+    color: white;
+    position: relative;
+}
+button:hover {
+    background-color: green;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+#arrow-right {
+    position: absolute;
+    font-size: 27px;
+    transform: translateY(0%);
+    color: black;
+    left: -27px;
+    animation-name: right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+#arrow-left {
+    position: absolute;
+    font-size: 27px;
+    transform: translateY(0%);
+    color: black;
+    right: -27px;
+    animation-name: left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+/* Start Animation */
+
+@keyframes right {
+
+    0%,
+    50% {
+        left: -27px
+    }
+
+    100% {
+        left: -37px;
+    }
+}
+
+@keyframes left {
+
+    0%,
+    50% {
+        right: -27px
+    }
+
+    100% {
+        right: -37px;
+    }
+}
